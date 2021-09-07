@@ -26,7 +26,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'TypeScript to OAS 3 Converter',
-      template: path.resolve(__dirname, './src/index.html')
+      template: path.resolve(__dirname, './src/index.html'),
+      inject: false
     }),
   ],
   resolve: {
