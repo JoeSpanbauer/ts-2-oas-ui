@@ -27,10 +27,15 @@ const Page = () => {
   }
 
   return (
-    <div>
-      <Input updateInput={onInputChange} />
-      <Output schema={output} />
-      <GenerateButton onClick={generateOutput} />
+    <div className="pageContainer">
+      <div className="page">
+        <div className="inputOutput">
+          <Input updateInput={onInputChange} />
+          <div className="inputOutputSpacer" />
+          <Output schema={output} />
+        </div>
+        <GenerateButton onClick={generateOutput} />
+      </div>
     </div>
   )
 }

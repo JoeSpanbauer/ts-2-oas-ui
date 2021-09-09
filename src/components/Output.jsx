@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 
 const Output = ({ schema }) => {
   return (
-    <div>
-      <textarea value={schema} />
+    <div className="textContainer">
+      <textarea placeholder="Schema output here." value={schema} />
     </div>
   )
 }

@@ -1,0 +1,83 @@
+$blue: #47b7f9;
+
+html, body, #app-root {
+  height: 100%;
+  margin: 0;
+}
+
+#app-root {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.header {
+  background-color: $blue;
+  color: white;
+  -webkit-box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.18); 
+  box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.18);
+  margin-bottom: 15px;
+  padding: 15px;
+
+  a {
+    color: white;
+    font-size: 28px;
+    margin-left: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+.pageContainer {
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+
+  .page {
+    padding: 20px;
+    margin: 0 auto;
+    background: white;
+    border: 1px solid #d8d8d8;
+    border-radius: 7px;
+    -webkit-box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.2); 
+    box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+  }
+}
+
+.inputOutput {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+
+  .inputOutputSpacer {
+    width: 1em;
+  }
+
+  .textContainer {
+    flex: 1 1 auto;
+
+    textarea {
+      box-sizing: border-box;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.generateButton {
+  flex: 0 1 40px;
+  border: 1px solid lightgray;
+  border-radius: 7px;
+  font-size: 21px;
+  margin: 5px 0;
+  color: white;
+  background-color: $blue;
+  margin-top: 20px;
+}

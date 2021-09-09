@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 
 const Input = ({ updateInput }) => {
   return (
-    <textarea onChange={updateInput} />
+    <div className="textContainer">
+      <textarea placeholder="Paste types file here." onChange={updateInput} />
+    </div>
   )
 }
 
